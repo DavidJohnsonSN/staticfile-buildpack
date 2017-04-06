@@ -4,6 +4,22 @@
 
 A Cloud Foundry [buildpack](https://docs.cloudfoundry.org/buildpacks/) for static content such as websites (HTML/JS/CSS).
 
+## staticfile-lua
+
+This fork uses OpenResty 1.11.2.2, which provides Lua support. As such, we just the language *staticfile-lua* to differentiate this from the standard build pack.
+
+Nginx was built on an Ubuntu 14.04.3 VM:
+
+```
+sudo apt-get install libreadline-dev libncurses5-dev libpcre3-dev libssl-dev perl make build-essential libgeoip-dev
+curl -sSL https://openresty.org/download/openresty-1.11.2.2.tar.gz | tar xzf -
+cd openresty-1.11.2.2
+./configure --with-luajit --with-pcre-jit --with-ipv6 --prefix=/home/vcap/app
+sudo rm -rf /home/vcap/app
+sudo make install
+tar czvf nginx-1.11.2.2.tgz -C /home/vcap/app .
+```
+
 ### Buildpack User Documentation
 
 Official buildpack documentation can be found at [staticfile buildpack docs](https://docs.cloudfoundry.org/buildpacks/staticfile/index.html).
