@@ -1,5 +1,5 @@
 ---
-language: staticfile
+language: staticfile-lua
 default_versions:
 - name: nginx
   version: 1.11.2.2
@@ -7,7 +7,7 @@ dependencies:
 - name: nginx
   version: 1.11.2.2
   uri: https://raw.githubusercontent.com/springernature/staticfile-buildpack/master/dist/nginx-1.11.2.2.tgz
-  md5: 78ab7597a8f81050953ce701f84bab0a
+  md5: 0cb9e2304b625924965e0ef4ef6c6a04
   cf_stacks:
   - cflinuxfs2
 pre_package: scripts/build.sh
