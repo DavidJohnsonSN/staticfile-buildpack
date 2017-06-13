@@ -7,7 +7,7 @@ dependencies:
 - name: nginx
   version: 1.11.2.3
   uri: https://raw.githubusercontent.com/springernature/staticfile-buildpack/master/dist/nginx-1.11.2.3.tgz
-  md5: 2bb2ba2ea0d896f00c9c561694721aa0
+  md5: bcdb87e86675166770ac01e96817fa30
   cf_stacks:
   - cflinuxfs2
 pre_package: scripts/build.sh
