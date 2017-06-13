@@ -15,7 +15,7 @@ sudo apt-get install libreadline-dev libncurses5-dev libpcre3-dev libssl-dev per
 curl -sSL https://openresty.org/download/openresty-1.11.2.3.tar.gz | tar xzf -
 cd openresty-1.11.2.3
 git clone git://github.com/vozlt/nginx-module-vts.git
-./configure --with-luajit --with-pcre-jit --with-ipv6 --prefix=/home/vcap/app --add-module=./nginx-module-vts
+./configure --with-luajit --with-pcre-jit --with-http_realip_module --with-ipv6 --prefix=/home/vcap/app --add-module=./nginx-module-vts
 sudo rm -rf /home/vcap/app
 sudo make install
 tar czvf nginx-1.11.2.3.tgz -C /home/vcap/app .
