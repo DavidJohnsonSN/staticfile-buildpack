@@ -28,7 +28,7 @@ var (
 )
 
 // SemVerRegex is the regular expression used to parse a semantic version.
-const SemVerRegex string = `v?([0-9]+)(\.[0-9]+)?(\.[0-9]+)?(\.[0-9]+)?` +
+const SemVerRegex string = `v?([0-9]+)(\.[0-9]+)?(\.[0-9]+)?` +
 	`(-([0-9A-Za-z\-]+(\.[0-9A-Za-z\-]+)*))?` +
 	`(\+([0-9A-Za-z\-]+(\.[0-9A-Za-z\-]+)*))?`
 
