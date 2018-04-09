@@ -6,8 +6,8 @@ default_versions:
 dependencies:
 - name: nginx
   version: 1.13.6-1
-  uri: https://raw.githubusercontent.com/springernature/staticfile-buildpack/master/dist/nginx-1.13.6.1.tgz
-  sha256: 0efa5358106dbafdd423f0df8708171ad40d174986b1f9546122fe0d1a8784c3
+  uri: https://raw.githubusercontent.com/DavidJohnsonSN/staticfile-buildpack/master/dist/nginx-1.13.6.1.tgz
+  sha256: 5fdaa9ef6fd3dd78a91c63971e5eb2205a2ae69b63c1689be5d3b35e3e6bf8c3
   cf_stacks:
   - cflinuxfs2
 pre_package: scripts/build.sh
